@@ -1,0 +1,68 @@
+ERROR - 2023-04-08 06:04:00 --> mysqli_sql_exception: Unknown column 'judul' in 'field list' in C:\xampp\htdocs\univ_uts\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\univ_uts\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `do...', 0)
+#1 C:\xampp\htdocs\univ_uts\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `do...')
+#2 C:\xampp\htdocs\univ_uts\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `do...')
+#3 C:\xampp\htdocs\univ_uts\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `do...', Array, false)
+#4 C:\xampp\htdocs\univ_uts\app\Models\Modeldosen.php(50): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\univ_uts\app\Controllers\dosen.php(62): App\Models\Modeldosen->insertdosen(Array)
+#6 C:\xampp\htdocs\univ_uts\system\CodeIgniter.php(934): App\Controllers\dosen->insert()
+#7 C:\xampp\htdocs\univ_uts\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dosen))
+#8 C:\xampp\htdocs\univ_uts\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\univ_uts\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\univ_uts\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-04-08 06:04:00 --> Unknown column 'judul' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dosen` (`judul`, `tanggal`, `isi`) VALUES (:judul:, :tanggal:, :isi:)', [...], false)
+ 2 APPPATH\Models\Modeldosen.php(50): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\dosen.php(62): App\Models\Modeldosen->insertdosen([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\dosen->insert()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\dosen))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-08 06:58:46 --> Invalid file: "mahasiswaedit.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mahasiswaedit.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('mahasiswaedit', [], true)
+ 3 APPPATH\Controllers\mahasiswa.php(24): view('mahasiswaedit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\mahasiswa->update('1')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\mahasiswa))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-08 07:01:51 --> Invalid file: "mahasiswaedit.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mahasiswaedit.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('mahasiswaedit', [], true)
+ 3 APPPATH\Controllers\mahasiswa.php(24): view('mahasiswaedit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\mahasiswa->update('1')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\mahasiswa))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-08 07:05:30 --> mysqli_sql_exception: Unknown column 'NAMA_pegawai' in 'field list' in C:\xampp\htdocs\univ_uts\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\univ_uts\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pe...', 0)
+#1 C:\xampp\htdocs\univ_uts\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 C:\xampp\htdocs\univ_uts\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 C:\xampp\htdocs\univ_uts\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 C:\xampp\htdocs\univ_uts\app\Models\Modelpegawai.php(50): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\univ_uts\app\Controllers\pegawai.php(62): App\Models\Modelpegawai->insertpegawai(Array)
+#6 C:\xampp\htdocs\univ_uts\system\CodeIgniter.php(934): App\Controllers\pegawai->insert()
+#7 C:\xampp\htdocs\univ_uts\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pegawai))
+#8 C:\xampp\htdocs\univ_uts\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\univ_uts\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\univ_uts\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-04-08 07:05:30 --> Unknown column 'NAMA_pegawai' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pegawai` (`NAMA_pegawai`, `NIM`, `ALAMAT`) VALUES (:NAMA_pegawai:, :NIM:, :ALAMAT:)', [...], false)
+ 2 APPPATH\Models\Modelpegawai.php(50): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\pegawai.php(62): App\Models\Modelpegawai->insertpegawai([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\pegawai->insert()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pegawai))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
